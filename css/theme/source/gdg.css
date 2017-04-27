@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /**
  * Blood theme for reveal.js
  * Author: Walther http://github.com/Walther
@@ -9,7 +10,6 @@
  * For other themes, change @codeBackground accordingly.
  *
  */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -18,18 +18,18 @@ body {
   background-color: #263238;
 }
 .reveal {
-  font-family: Ubuntu, 'sans-serif';
+  font-family: 'Roboto', sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #eee;
+  color: #eeeeee;
 }
 ::selection {
-  color: #fff;
+  color: #ffffff;
   background: #263238;
   text-shadow: none;
 }
 ::-moz-selection {
-  color: #fff;
+  color: #ffffff;
   background: #263238;
   text-shadow: none;
 }
@@ -48,13 +48,13 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: #eeeeee;
   font-family: Ubuntu, 'sans-serif';
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
   text-transform: uppercase;
-  text-shadow: 2px 2px 2px #DDD;
+  text-shadow: 2px 2px 2px #dddddd;
   word-wrap: break-word;
 }
 .reveal h1 {
@@ -70,7 +70,7 @@ body {
   font-size: 1em;
 }
 .reveal h1 {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbbbbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaaaaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 /*********************************************
  * OTHER
@@ -234,7 +234,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #eee;
+  border: 4px solid #eeeeee;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 .reveal section img.plain {
@@ -302,14 +302,19 @@ body {
 }
 .blue-band {
   width: 100%;
-  height: 7px;
+  height: 10px;
   background-color: #0077b3;
   position: fixed;
-  bottom: 1%;
+  bottom: 0%;
+}
+.reveal .progress {
+  height: 10px;
+}
+.reveal .progress span {
+  background: #0077b3;
 }
 .reveal p {
   font-weight: 300;
-  text-shadow: 1px 1px #DDD;
 }
 .reveal h1,
 .reveal h2,
@@ -318,6 +323,7 @@ body {
 .reveal h5,
 .reveal h6 {
   font-weight: 700;
+  text-shadow: 0px 0px;
 }
 .reveal p code {
   background-color: #23241f;
@@ -326,4 +332,16 @@ body {
 }
 .reveal small code {
   vertical-align: baseline;
+}
+span.red {
+  color: #e30613;
+}
+span.green {
+  color: #009450;
+}
+span.yellow {
+  color: #f7c339;
+}
+span.blue {
+  color: #0077b3;
 }
