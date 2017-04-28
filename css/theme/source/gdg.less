@@ -60,15 +60,38 @@
 // some overrides after theme template import
 @mainFont: 'Roboto', sans-serif;
 body {
-    background-image: url("../../../img/gdg-bari.png");
+   /* background-image: url("../../../img/gdg-bari.png");
     background-repeat: no-repeat;
     background-size: 20%;
-    background-position: bottom left;
+    background-position: bottom left;*/
+
 }
 
+
+
+.img{
+    //background: url("../../../img/gdg-bari.png");
+    //background-repeat: no-repeat;
+    width: 100%;
+    height: 20%;
+
+    //background-size: 100%;
+    //background-position: bottom left;
+    position: fixed;
+    bottom: 0%;
+    z-index: 9999;
+
+    img {
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+        height: 20%;
+    }
+
+}
 .blue-band {
     width: 100%;
-    height: 10px;
+    height: 1.5%;
     background-color: @gdg2;
     position: fixed;
     bottom: 0%;
@@ -76,7 +99,7 @@ body {
 
 .reveal {
     .progress {
-        height: 10px;
+        height: 2%;
         span {
             background: @gdg2;
         }
